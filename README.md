@@ -1,1 +1,2 @@
 # JGallery
+Image Gallery 
