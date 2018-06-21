@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem) {
             if(menuItem.getItemId() == R.id.action_done) {
-                int cnt=0;
+                cnt=0;
                 imageStringList = new ArrayList<>();
                 for (int i =0; i<imageBooleanList.length; i++){
                     if (imageBooleanList[i]){
