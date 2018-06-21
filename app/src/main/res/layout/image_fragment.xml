@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imagesFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/imageViewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/cropImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_crop_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/padding_8dp"
+            android:layout_margin="@dimen/padding_8dp"/>
+
+        <LinearLayout
+            android:id="@+id/titleLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#40FFFFFF">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxLength="80"
+                android:layout_gravity="center_vertical|start"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/colorWhite"
+                android:text="@string/enter_a_caption"
+                android:textSize="18sp"
+                android:padding="@dimen/padding_8dp"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
