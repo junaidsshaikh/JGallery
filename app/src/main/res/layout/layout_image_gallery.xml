@@ -9,7 +9,7 @@
         android:layout_width="@dimen/padding_110dp"
         android:layout_height="@dimen/padding_110dp"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:background="#20000000"/>
 
     <CheckBox
